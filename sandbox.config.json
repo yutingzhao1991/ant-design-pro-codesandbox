@@ -1,7 +1,7 @@
 {
   "infiniteLoopProtection": true,
   "hardReloadOnChange": false,
-  "view": "terminal",
+  "view": "browser",
   "container": {
     "port": 8000
   },
