@@ -30,3 +30,29 @@ export async function rule(
     ...(options || {}),
   });
 }
+
+/** 新建规则 POST /api/rule */
+export async function addRule(
+  data: TableListItem,
+  options?: Record<string, unknown>,
+) {
+  return request<TableListItem>('/api/rule', {
+    method: 'POST',
+    data,
+    ...(options || {}),
+  });
+}
+
+/** 删除规则 DELETE /api/rule */
+export async function removeRule(
+  data: {
+    key: number[];
+  },
+  options?: Record<string, unknown>,
+) {
+  return request<Record<string, any>>('/api/rule', {
+    method: 'DELETE',
+    data,
+    ...(options || {}),
+  });
+}
