@@ -9,6 +9,11 @@ export default defineConfig({
   },
   routes: [
     {
+      path: '/newpage',
+      name: '练习生',
+      component: './NewPage',
+    },
+    {
       path: '/',
       component: '@/pages/index',
       name: '首页',
